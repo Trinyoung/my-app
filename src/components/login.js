@@ -42,7 +42,6 @@ export default class Login extends Component {
                   <Button variant="primary" type="submit" className="button-left">Login</Button>
                   <Button variant="primary" type="submit" className="button-right">Register</Button>
                 </td>
-                {/* <td className="formBottom"><Button variant="primary" type="submit">Register</Button></td> */}
               </tr>
             </tbody>
             
