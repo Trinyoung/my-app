@@ -1,0 +1,43 @@
+.login-container {
+  width: 300px;
+}
+td {
+  /* border: 1px solid green; */
+  padding-top:1rem;
+  /* padding-bottom: .5rem;  */
+  padding-left: .5rem;
+  padding-right: 0.5rem;
+  color: green;
+  font-size: 1rem;
+  margin: 1rem auto;
+}
+table {
+  width:25rem;
+}
+.loginForm {
+  border: 1px green solid;
+  background-color: white;
+  border-radius: .5rem;
+}
+
+.labeltitle {
+  font-size: 1.2rem;
+  color: green;
+  margin-right: 0.2rem;
+}
+.loginHead {
+  text-align: center;
+  color: blue;
+  background: yellow
+}
+.button-left {
+  margin-right: 0.5rem;
+  width: 5rem;
+  margin-bottom: 0.5rem;
+}
+
+.button-right {
+  width: 5rem;
+  background: rgb(96, 96, 167);
+  margin-bottom: 0.5rem;
+}
