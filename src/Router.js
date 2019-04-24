@@ -42,17 +42,18 @@ const Message = React.createClass({
     return <h3>Message {this.props.params.id}</h3>
   }
 })
-class Router extends Component {
+class AppRouter extends Component {
   render(){
-    <Router>
-      <Route path="/" component={App}>
-        <Route path="about" component={About} />
-        <Route path="inbox" component={Inbox}>
-          <Route path="messages/:id" component={Message} />
+    return (
+      <Router>
+        <Route path="/" component={App}>
+          <Route path="about" component={About} />
+          <Route path="inbox" component={Inbox}>
+            <Route path="messages/:id" component={Message} />
+          </Route>
         </Route>
-      </Route>
-    </Router>
-  }
+      </Router>
+    )};
 }
 
-export default Router;
+export default AppRouter;

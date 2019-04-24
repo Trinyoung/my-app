@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import '../css/login.css';
 import {Form, Button} from 'react-bootstrap'
-// import 
 export default class Login extends Component {
   constructor(props) {
     super(props);
