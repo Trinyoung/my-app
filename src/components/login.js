@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import '../css/login.css';
-import {Form, Button} from 'react-bootstrap'
+import {Form, Button} from 'react-bootstrap';
+import {BrowserRouter as Router, Route, Link} from 'react-router-dom';
 export default class Login extends Component {
   constructor(props) {
     super(props);
@@ -19,34 +20,32 @@ export default class Login extends Component {
   render() {
     return (
       // <div className="login-container">
-        <Form className="loginForm">
-          <table>
-            <tbody>
-              <tr>
-                <th  colSpan="2"  className="loginHead"><span>LOGIN</span></th>
-              </tr>
-              <tr>
-                <td><Form.Label className="labeltitle">Account</Form.Label></td>
-                <td><Form.Control type="email" placeholder="Enter account" /></td>
-              </tr>
-              <tr>
-                <td><Form.Label className="labeltitle">Password</Form.Label></td>
-                <td><Form.Control type="password" placeholder="Password" /></td>
-              </tr>
-              <tr>
-                <td colSpan="2"><Form.Check type="checkbox" label="rememer password" /></td>
-              </tr>
-              <tr>
-                <td className="formBottom" colSpan="2">
-                  <Button variant="primary" type="submit" className="button-left">Login</Button>
-                  <Button variant="primary" type="submit" className="button-right">Register</Button>
-                </td>
-              </tr>
-            </tbody>
-            
-          </table>  
+      <Form className="loginForm">
+        <table>
+          <tbody>
+            <tr>
+              <th  colSpan="2"  className="loginHead"><span>LOGIN</span></th>
+            </tr>
+            <tr>
+              <td><Form.Label className="labeltitle">Account</Form.Label></td>
+              <td><Form.Control type="email" placeholder="Enter account" /></td>
+            </tr>
+            <tr>
+              <td><Form.Label className="labeltitle">Password</Form.Label></td>
+              <td><Form.Control type="password" placeholder="Password" /></td>
+            </tr>
+            <tr>
+              <td colSpan="2"><Form.Check type="checkbox" label="rememer password" /></td>
+            </tr>
+            <tr>
+              <td className="formBottom" colSpan="2">
+                <Button variant="primary" type="submit" className="button-left">Login</Button>
+                <Link to="/register/"><Button variant="primary" type="submit" className="button-right">Register</Button></Link>
+              </td>
+            </tr>
+          </tbody>
+        </table>  
       </Form>
-      // </div>
     );
   }
 }

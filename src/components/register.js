@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import '../css/login.css';
 import {Form, Button} from 'react-bootstrap'
 // import 
-export default class Login extends Component {
+export default class Register extends Component {
   constructor(props) {
     super(props);
     this.state = { value: '' };
@@ -24,7 +24,7 @@ export default class Login extends Component {
           <table>
             <tbody>
               <tr>
-                <th  colSpan="2"  className="loginHead"><span>SignUp</span></th>
+                <th  colSpan="2"  className="loginHead"><span>Register</span></th>
               </tr>
               <tr>
                 <td><Form.Label className="labeltitle">Account</Form.Label></td>
@@ -47,7 +47,6 @@ export default class Login extends Component {
               </tr>
               <tr>
                 <td colSpan="2">
-                  <Button variant="primary" type="submit">Submit</Button>
                   <Button variant="primary" type="submit">Submit</Button>
                 </td>
               </tr>

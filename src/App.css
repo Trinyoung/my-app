@@ -34,3 +34,7 @@
 .App-logo {
   height: 10vmin;
 }
+
+.HomeComponent {
+  position: fixed;
+}
