@@ -1,0 +1,12 @@
+.broadside-container{
+  /* position: fixed; */
+  width: 20rem;
+  /* overflow: scroll; */
+  /* top:3rem; */
+  height: 500rem;
+}
+.nav-container {
+  position: fixed;
+  width: 100%;
+ 
+}
