@@ -7,14 +7,9 @@ export default class Home extends Component {
   render() {
     return (
       <div>
-         <div className="nav-container">
-            <NavbarComponent className="fixed-top"/>
-         </div> 
-         <div className="broadside-container">
-            <Broadside/>
-         </div>
+        <NavbarComponent/>
+        <Broadside />
       </div>
-     
     );
   }
 }

@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import '../css/login.css';
 import {Form, Button} from 'react-bootstrap';
-import {BrowserRouter as Router, Route, Link} from 'react-router-dom';
+import {Link} from 'react-router-dom';
 export default class Login extends Component {
   constructor(props) {
     super(props);
@@ -39,7 +39,7 @@ export default class Login extends Component {
             </tr>
             <tr>
               <td className="formBottom" colSpan="2">
-                <Button variant="primary" type="submit" className="button-left">Login</Button>
+                <Link to="/index"><Button variant="primary" type="submit" className="button-left">Login</Button></Link>
                 <Link to="/register/"><Button variant="primary" type="submit" className="button-right">Register</Button></Link>
               </td>
             </tr>
