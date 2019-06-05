@@ -1,9 +1,10 @@
 .broadside-container{
   /* position: fixed; */
   width: 20rem;
-  /* overflow: scroll; */
+  
   /* top:3rem; */
   height: 500rem;
+
 }
 .nav-container {
   position: sticky;
@@ -17,4 +18,19 @@
   margin-right: auto;
   margin-left: auto;
   border:1px solid blue
+}
+
+.head-container {
+  height: 3.5rem;
+  background: red;
+}
+
+.main-body {
+  background: yellowgreen
+}
+.right-side {
+  background: blue
+}
+.left-side {
+  background: yellow
 }

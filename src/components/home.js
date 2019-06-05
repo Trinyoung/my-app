@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-// import {Form, Button, Navbar, Nav, NavDropdown, FormControl} from 'react-bootstrap';
+import {Container,Row, Col} from 'react-bootstrap';
 import NavbarComponent from './nav';
 import Broadside from './broadside';
 import '../css/home.css';
@@ -8,7 +8,22 @@ export default class Home extends Component {
     return (
       <div>
         <NavbarComponent/>
-        <Broadside />
+        <div className="head-container"></div>
+        <Container fluid = {true}>
+          <Container fluid = {true} >
+            <Row>
+              <Col md={2} className="left-side">
+                <Broadside/>
+              </Col>
+              <Col md={7} className="main-body">
+                  this is main
+              </Col>
+              <Col md={3} className="right-side">
+                  this is right
+              </Col>
+            </Row>
+          </Container>
+        </Container>
       </div>
     );
   }

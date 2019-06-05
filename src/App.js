@@ -15,12 +15,12 @@ class App extends Component {
           {/* <AppRouter/> */}
           <Route path='/index' component={Home}/>
           <Route path='/layout' component={Layout}/>
-          <header className="App-header">
+          {/* <header className="App-header">
             <img src={logo} className="App-logo" alt="logo" />
             <Route path='/login' component={Login}/>
             <Route exact path='/register/' component={Register}/>
             
-          </header>
+          </header> */}
         </div>
       </Router>
     );
