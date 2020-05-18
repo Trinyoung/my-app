@@ -1,13 +1,17 @@
 .broadside-container{
-  /* position: fixed; */
-  width: 20rem;
-  /* overflow: scroll; */
-  /* top:3rem; */
-  height: 500rem;
+  /* width: 100%; */
+  
+  border: 1px solid blue;
 }
+.broadSide {
+  border: 1px solid green;
+  position: fixed;
+}
+
 .nav-container {
   position: sticky;
   width: 100%;
+  height: 3.5rem;
 }
 
 .body-container {
@@ -16,5 +20,21 @@
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
-  border:1px solid blue
+  /* border:1px solid blue; */
+  height: 50rem;
+  background-color: ghostwhite;
+}
+.header-container {
+  height: 3.5rem;
+}
+
+.numberList-item {
+  border-top: 1px solid gray;
+  width: 100%;
+}
+
+.main-container {
+  /* background-origin: padding-box; */
+  /* border: 1px solid green; */
+  /* background: greenyellow; */
 }

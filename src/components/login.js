@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import '../css/login.css';
-import {Form, Button} from 'react-bootstrap';
-import {Link} from 'react-router-dom';
+import { Form, Button, Table } from 'react-bootstrap';
+import { Link, Redirect } from 'react-router-dom';
+import { axios } from 'axios';
 export default class Login extends Component {
   constructor(props) {
     super(props);
@@ -11,20 +12,24 @@ export default class Login extends Component {
     this.handleSubmit = this.handleSubmit.bind(this);
   }
   handleChange(event) {
-    this.setState({value: event.target.value});
+    this.setState({ value: event.target.value });
   }
   handleSubmit(event) {
     alert('A name was submitted: ' + this.state.value);
     event.preventDefault();
   }
+
+  Login() {
+    // return <Redirect to='/index'/>
+  }
   render() {
     return (
       // <div className="login-container">
       <Form className="loginForm">
-        <table>
+        <Table>
           <tbody>
             <tr>
-              <th  colSpan="2"  className="loginHead"><span>LOGIN</span></th>
+              <th colSpan="2" className="loginHead"><span>LOGIN</span></th>
             </tr>
             <tr>
               <td><Form.Label className="labeltitle">Account</Form.Label></td>
@@ -39,12 +44,13 @@ export default class Login extends Component {
             </tr>
             <tr>
               <td className="formBottom" colSpan="2">
-                <Link to="/index"><Button variant="primary" type="submit" className="button-left">Login</Button></Link>
+                {/* <Link to="/index"><Button variant="primary" type="submit" className="button-left">Login</Button></Link> */}
+                <Button variant='primary' type='submit' className='button-left' onClick={this.Login.bind(this)}>Login</Button>
                 <Link to="/register/"><Button variant="primary" type="submit" className="button-right">Register</Button></Link>
               </td>
             </tr>
           </tbody>
-        </table>  
+        </Table>
       </Form>
     );
   }

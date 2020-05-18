@@ -15,7 +15,7 @@ table {
   width:25rem;
 }
 .loginForm {
-  border: 1px green solid;
+  /* border: 1px green solid; */
   background-color: white;
   border-radius: .5rem;
 }
