@@ -1,6 +1,6 @@
 .broadside-container{
-  /* width: 100%; */
-  
+  width: 100% !important; 
+  padding: 0 0 0 0;
   border: 1px solid blue;
 }
 .broadSide {

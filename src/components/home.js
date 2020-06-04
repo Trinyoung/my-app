@@ -11,7 +11,7 @@ export default class Home extends Component {
         <NavbarComponent/>
         <Container className="main-container" fluid={true}>
           <Row>
-            <Col md={2} lg={2} sm={0} className='broadSide'><Broadside/></Col>
+            <Col md={2} lg={2} sm={0} className='broadside-container'><Broadside/></Col>
             <Col md={8} lg={8} sm={12}><Main/></Col>
             <Col md={2} lg={2} sm={0}></Col> 
           </Row>

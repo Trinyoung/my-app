@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
-import { Container, ListGroup, Jumbotron, Row, Col, ModalBody } from 'react-bootstrap';
+// import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
+import { Container } from 'react-bootstrap';
 
 export default class Main extends Component {
   constructor (){

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
-import { ListGroup, Col } from 'react-bootstrap';
+// import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
+import { ListGroup } from 'react-bootstrap';
 
 export default class Broadside extends Component {
   constructor() {
@@ -16,7 +16,7 @@ export default class Broadside extends Component {
   }
   render() {
     return (
-      <ListGroup className= "broadside-container">
+      <ListGroup>
         {/* <ListGroup as="div"> */}
           {this.numberList(this.names)}
         {/* </ListGroup> */}

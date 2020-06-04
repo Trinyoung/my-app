@@ -4,7 +4,6 @@ import './index.css';
 import App from './App';
 // import AppRouter from './AppRouter';
 import {BrowserRouter as Router, Route} from 'react-router-dom';
-import Register from './components/register';
 import * as serviceWorker from './serviceWorker';
 // console.log(RouterClass);
 // ReactDOM.render(<App/>, document.getElementById('root'));

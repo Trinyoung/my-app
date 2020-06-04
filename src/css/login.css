@@ -11,7 +11,7 @@ td {
   font-size: 1rem;
   margin: 1rem auto;
 }
-table {
+.loginTable {
   width:25rem;
 }
 .loginForm {
