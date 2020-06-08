@@ -1,0 +1,16 @@
+.Editor-Draft {
+    /* padding: 0 0 0 0; */
+    border: 1px solid blue;
+  }
+.Editor-container {
+    border: 1px solid black;
+    padding: 2px;
+    
+}
+
+.superFancyBlockquote {
+    color: #999;
+    font-family: 'Hoefler Text', Georgia, serif;
+    font-style: italic;
+    text-align: center;
+}
