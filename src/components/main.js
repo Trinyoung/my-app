@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 // import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 import { Container } from 'react-bootstrap';
+import MyEditor from './editor';
 
 export default class Main extends Component {
   constructor (){
@@ -11,7 +12,7 @@ export default class Main extends Component {
   render() {
     return (
       <Container className='body-container'>
-        
+        <MyEditor/>
       </Container>
     )
   }

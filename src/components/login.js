@@ -6,7 +6,7 @@ import axios from 'axios';
 export default class Login extends Component {
   constructor(props) {
     super(props);
-    this.state = { username: '', password: ''};
+    this.state = { username: '', password: '' };
 
     this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
@@ -22,12 +22,10 @@ export default class Login extends Component {
   }
 
   async Login() {
-    console.log('登录操作开始');
-    console.log(this.state.username, this.state.password);
     const body = Object.assign({}, this.state);
-    // console.log
-    axios.post('http://localhost:3000/login',body);
+    axios.post('http://localhost:3000/login', body);
   }
+  
   valueChange(field, event) {
     const options = {};
     options[field] = event.target.value;
@@ -43,11 +41,11 @@ export default class Login extends Component {
             </tr>
             <tr>
               <td><Form.Label className="labeltitle">Account</Form.Label></td>
-              <td><Form.Control type="email" placeholder="Enter account" value={this.state.username} onChange={this.valueChange.bind(this, 'username')}/></td>
+              <td><Form.Control type="email" placeholder="Enter account" value={this.state.username} onChange={this.valueChange.bind(this, 'username')} /></td>
             </tr>
             <tr>
               <td><Form.Label className="labeltitle">Password</Form.Label></td>
-              <td><Form.Control type="password" placeholder="Password" value={this.state.password} onChange={this.valueChange.bind(this, 'password')}/></td>
+              <td><Form.Control type="password" placeholder="Password" value={this.state.password} onChange={this.valueChange.bind(this, 'password')} /></td>
             </tr>
             <tr>
               <td colSpan="2"><Form.Check type="checkbox" label="rememer password" /></td>
