@@ -9,17 +9,15 @@ export default class Broadside extends Component {
   }
   numberList(names) {
     return (
-      names.map(function(name){
-        return <ListGroup.Item as="div"  className="numberList-item">{name}</ListGroup.Item>
+      names.map(function (name, index) {
+        return <ListGroup.Item as="div" key={index}>{name}</ListGroup.Item>
       })
     );
   }
   render() {
     return (
       <ListGroup>
-        {/* <ListGroup as="div"> */}
-          {this.numberList(this.names)}
-        {/* </ListGroup> */}
+        {this.numberList(this.names)}
       </ListGroup>
     )
   }

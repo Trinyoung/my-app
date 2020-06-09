@@ -1,7 +1,7 @@
 import Editor from 'for-editor';
-import React from 'react';
+import React, { Component } from 'react';
 
-export default class ForEditor extends React.Component {
+export default class ForEditor extends Component {
     constructor(props) {
         super(props);
         this.state = {
