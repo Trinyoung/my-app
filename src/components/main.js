@@ -11,18 +11,17 @@ export default class Main extends Component {
     this.state = {
       value: ''
     };
+
   }
   handleChange() {
     this.setState({
-      
+
     });
   }
   render() {
-    const { value } = this.state;
     return (
       <Container className='body-container'>
-        <MyEditor/>
-        <ForEditor/>
+        <ForEditor />
       </Container>
     )
   }

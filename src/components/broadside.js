@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
-import { ListGroup, Col, Nav } from 'react-bootstrap';
+import { Nav } from 'react-bootstrap';
 
 export default class Broadside extends Component {
   constructor() {
@@ -9,9 +9,10 @@ export default class Broadside extends Component {
     this.columns = ['first', 'second'];
   }
   numberList(names) {
+    const columns = this.columns;
     return (
-      names.map(function(name){
-        return <Nav.Item><Nav.Link eventKey={this.columns}>{name}</Nav.Link></Nav.Item>
+      names.map(function(name, index){
+        return <Nav.Item key={index}><Nav.Link eventKey={columns}>{name}</Nav.Link></Nav.Item>
       })
     );
   }
@@ -23,12 +24,3 @@ export default class Broadside extends Component {
     )
   }
 }
-
-{/* <Nav variant="pills" className="flex-column">
-                <Nav.Item>
-                  <Nav.Link eventKey="first">Tab 1</Nav.Link>
-                </Nav.Item>
-                <Nav.Item>
-                  <Nav.Link eventKey="second">Tab 2</Nav.Link>
-                </Nav.Item>
-              </Nav> */}
