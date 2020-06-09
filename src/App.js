@@ -11,12 +11,11 @@ class App extends Component {
     return (
       <Router>
         <div className="App">
-          <Route path='/home' component={Home}/>
+          <Route path='/index' component={Home}/>
           <Route path='/layout' component={Layout}/>
           <header className="App-header">
             <Route path='/login' component={Login}/>
             <Route exact path='/register/' component={Register}/>
-            
           </header>
         </div>
       </Router>

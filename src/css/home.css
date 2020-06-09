@@ -5,9 +5,12 @@
 }
 .broadSide {
   border: 1px solid green;
-  position: fixed;
-}
 
+}
+.left-tabs {
+  position: relative;
+  top: 3.8rem;
+}
 .nav-container {
   position: sticky;
   width: 100%;
@@ -20,9 +23,9 @@
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
-  /* border:1px solid blue; */
   height: 50rem;
   background-color: ghostwhite;
+  position: relative;
 }
 .header-container {
   height: 3.5rem;
@@ -34,7 +37,11 @@
 }
 
 .main-container {
+  /* position: fixed; */
   /* background-origin: padding-box; */
   /* border: 1px solid green; */
   /* background: greenyellow; */
+}
+.all-container {
+  height: 100%;
 }
