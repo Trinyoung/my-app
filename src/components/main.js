@@ -5,12 +5,20 @@ import MyEditor from './editor';
 import ForEditor from './for_editor';
 
 export default class Main extends Component {
-  constructor (){
+  constructor() {
     super();
-    this.names = ['望星辰大海', '观天下纵横']
+    this.names = ['望星辰大海', '观天下纵横'];
+    this.state = {
+      value: ''
+    };
   }
-  
+  handleChange() {
+    this.setState({
+      
+    });
+  }
   render() {
+    const { value } = this.state;
     return (
       <Container className='body-container'>
         <MyEditor/>
