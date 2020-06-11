@@ -16,7 +16,7 @@ export default class ForEditor extends Component {
     render() {
         const { value } = this.state;
         return (
-            <Editor value={value} onChange={() => this.handleChange()} />
+            <Editor value={value} onChange={(value) => this.handleChange(value)} />
         );
     }
 } 
